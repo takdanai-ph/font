@@ -37,7 +37,8 @@ function TaskDetailPage() {
     const [error, setError] = useState(null);
     // const [userRole, setUserRole] = useState(localStorage.getItem('userRole'));
 
-    const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001';
+    // const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001';
+    const baseUrl = process.env.REACT_APP_API_BASE_URL || 'https://back-takdanai.up.railway.app';
     const token = localStorage.getItem('token');
 
     // --- Function ดึงข้อมูล Task Detail ---
