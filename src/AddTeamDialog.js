@@ -14,8 +14,8 @@ function AddTeamDialog({ open, onClose, onSave }) {
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({}); // State สำหรับเก็บ error ของแต่ละ field
 
-  const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001'; // ใช้ค่า default ถ้าไม่มี env
-  // const baseUrl = process.env.REACT_APP_API_BASE_URL || 'https://back-takdanai.up.railway.app';
+  // const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001'; // ใช้ค่า default ถ้าไม่มี env
+  const baseUrl = process.env.REACT_APP_API_BASE_URL || 'https://back-takdanai.up.railway.app';
   const apiUrl = `${baseUrl}/api/teams`;
 
   // --- Validate Form ---

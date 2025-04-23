@@ -25,8 +25,8 @@ function EditUserDialog({ open, onClose, user, onSave }) {
       team_id: '' // ค่าเริ่มต้น Team ID (ใช้ '' แทน null เพื่อให้ Select ทำงานง่าย)
   });
 
-  const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001';
-  // const baseUrl = process.env.REACT_APP_API_BASE_URL || 'https://back-takdanai.up.railway.app';
+  // const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001';
+  const baseUrl = process.env.REACT_APP_API_BASE_URL || 'https://back-takdanai.up.railway.app';
   const userApiUrl = `${baseUrl}/api/auth/users/${user?.id || user?._id}`; // ใช้ Optional Chaining ป้องกัน Error ถ้า user เป็น null
   const teamsApiUrl = `${baseUrl}/api/teams`; // API สำหรับดึงรายชื่อทีม
 

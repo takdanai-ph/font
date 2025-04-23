@@ -33,8 +33,8 @@ export default function Layout() {
   const navigate = useNavigate();
   const userRole = localStorage.getItem('userRole');
   const token = localStorage.getItem('token');
-  const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001';
-  // const baseUrl = process.env.REACT_APP_API_BASE_URL || 'https://back-takdanai.up.railway.app';
+  // const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001';
+  const baseUrl = process.env.REACT_APP_API_BASE_URL || 'https://back-takdanai.up.railway.app';
 
   // --- State ---
   const [notifications, setNotifications] = useState([]);

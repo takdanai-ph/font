@@ -14,8 +14,8 @@ function EditTeamDialog({ open, onClose, onSave, team }) {
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
 
-  const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001';
-  // const baseUrl = process.env.REACT_APP_API_BASE_URL || 'https://back-takdanai.up.railway.app';
+  // const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001';
+  const baseUrl = process.env.REACT_APP_API_BASE_URL || 'https://back-takdanai.up.railway.app';
   // ใช้ team.team_id หรือ team._id ขึ้นอยู่กับว่า backend ส่งอะไรมาเป็น ID หลัก
   const teamId = team ? (team.team_id || team._id) : null;
   const apiUrl = teamId ? `${baseUrl}/api/teams/${teamId}` : null;

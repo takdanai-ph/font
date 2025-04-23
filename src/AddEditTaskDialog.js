@@ -36,8 +36,8 @@ function AddEditTaskDialog({ open, onClose, onSave, taskData, currentUserRole })
   const [loadingTeams, setLoadingTeams] = useState(false);
   const [fetchError, setFetchError] = useState(null); // Error ตอนโหลด Users/Teams
 
-  const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001';
-  // const baseUrl = process.env.REACT_APP_API_BASE_URL || 'https://back-takdanai.up.railway.app';
+  // const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001';
+  const baseUrl = process.env.REACT_APP_API_BASE_URL || 'https://back-takdanai.up.railway.app';
   const token = localStorage.getItem('token');
 
   // --- Fetch Users ---

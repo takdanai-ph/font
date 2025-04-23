@@ -23,8 +23,8 @@ const MySwal = withReactContent(Swal);
 
 function UserList() {
   const navigate = useNavigate();
-  const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001';
-  // const baseUrl = process.env.REACT_APP_API_BASE_URL || 'https://back-takdanai.up.railway.app';
+  // const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001';
+  const baseUrl = process.env.REACT_APP_API_BASE_URL || 'https://back-takdanai.up.railway.app';
   const apiUrl = `${baseUrl}/api/auth/users`;
   // const apiIdUrl = `<span class="math-inline">\{API\_BASE\_URL\}/api/auth/users/</span>{userId}`;;
 

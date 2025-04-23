@@ -16,8 +16,8 @@ function TaskList({ tasks, refreshData, onTaskClick }) {
   const [selectedTask, setSelectedTask] = useState(null);
   const [currentUserRole, setCurrentUserRole] = useState(null);
 
-  const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001';
-  // const baseUrl = process.env.REACT_APP_API_BASE_URL || 'https://back-takdanai.up.railway.app';
+  // const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001';
+  const baseUrl = process.env.REACT_APP_API_BASE_URL || 'https://back-takdanai.up.railway.app';
 
   useEffect(() => {
     const role = localStorage.getItem('userRole');

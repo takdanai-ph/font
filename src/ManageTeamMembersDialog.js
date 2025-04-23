@@ -34,8 +34,8 @@ function ManageTeamMembersDialog({ open, onClose, team }) {
   // เก็บ Leader ID ปัจจุบัน (จาก team prop) เพื่อใช้เปรียบเทียบ
   const currentLeaderId = team?.leader_id?._id || team?.leader_id;
 
-  const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001';
-  // const baseUrl = process.env.REACT_APP_API_BASE_URL || 'https://back-takdanai.up.railway.app';
+  // const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001';
+  const baseUrl = process.env.REACT_APP_API_BASE_URL || 'https://back-takdanai.up.railway.app';
   const teamId = team?._id || team?.team_id; // ID ของทีมปัจจุบัน
 
   // URLs

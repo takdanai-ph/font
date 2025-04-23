@@ -42,8 +42,8 @@ function Dashboard() {
   const [loadingFilters, setLoadingFilters] = useState(false); // Loading สำหรับ Users/Teams
 
   // --- API URLs ---
-  const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001'; // หรือ Port ที่คุณใช้
-  // const baseUrl = process.env.REACT_APP_API_BASE_URL || 'https://back-takdanai.up.railway.app';
+  // const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001'; // หรือ Port ที่คุณใช้
+  const baseUrl = process.env.REACT_APP_API_BASE_URL || 'https://back-takdanai.up.railway.app';
   const summaryApiUrl = `${baseUrl}/api/tasks/summary`;
   const tasksApiUrl = `${baseUrl}/api/tasks`;
   const taskDurationApiUrl = `${baseUrl}/api/tasks/durations`; // Endpoint ใหม่

@@ -52,8 +52,8 @@ function TeamManagement() {
 
     try {
       // *** สำคัญ: Endpoint นี้คุณต้องไปสร้างใน Backend ***
-      const response = await fetch("http://localhost:3001/api/teams", requestOptions); // <<< เรียก API Teams
-      // const response = await fetch("https://back-takdanai.up.railway.app/api/teams", requestOptions);
+      // const response = await fetch("http://localhost:3001/api/teams", requestOptions); // <<< เรียก API Teams
+      const response = await fetch("https://back-takdanai.up.railway.app/api/teams", requestOptions);
       if (!response.ok) {
         const errData = await response.json().catch(() => ({ message: `HTTP error! ${response.status}`}));
         throw new Error(errData.message || `HTTP error! status: ${response.status}`);
@@ -93,8 +93,8 @@ function TeamManagement() {
 
         setLoading(true);
          // *** สำคัญ: Endpoint นี้คุณต้องไปสร้างใน Backend ***
-        fetch(`http://localhost:3001/api/teams/${teamId}`, requestOptions) // <<< เรียก API Delete Team
-        // fetch(`https://back-takdanai.up.railway.app/api/teams/${teamId}`, requestOptions)
+        // fetch(`http://localhost:3001/api/teams/${teamId}`, requestOptions) // <<< เรียก API Delete Team
+        fetch(`https://back-takdanai.up.railway.app/api/teams/${teamId}`, requestOptions)
           .then(response => {
              if (!response.ok) { /* ... handle error ... */ }
              return response.json(); // หรือ .text()
